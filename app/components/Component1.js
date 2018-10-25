@@ -1,15 +1,16 @@
-import template from '../templates/component1.hbs';
 import Marionette from 'backbone.marionette';
-import component3 from './Component3';
+import Component3 from './Component3';
+import template from '../templates/component1.hbs';
+
 
 export default Marionette.View.extend({
-  template: template,
+    template: template,
 
-  regions: {
-    someRegion: '.nested'
-  },
+    regions: {
+        someRegion: '.nested'
+    },
 
-  onRender(){
-    this.showChildView('someRegion', new component3());
-  }
+    onRender(){
+        this.showChildView('someRegion', new Component3());
+    }
 })

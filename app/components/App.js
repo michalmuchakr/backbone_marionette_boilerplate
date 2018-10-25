@@ -4,11 +4,11 @@ import model from '../models/model_v1';
 
 
 export default Marionette.Application.extend({
-  region: '#app',
+    region: '#app',
 
-  onStart() {
-    this.showView(new ItemView({
-      model
-    }));
-  }
+    onStart() {
+        this.showView(new ItemView({
+            model
+        }));
+    }
 });

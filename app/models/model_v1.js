@@ -1,3 +1,3 @@
 export default new Backbone.Model({
-  name: 'Michał'
+    name: 'Michał'
 });
